@@ -11,12 +11,13 @@ interface AmountFieldProps {
   inputName: keyof FormValues;
   currencyName: keyof FormValues;
   readonly?: boolean;
+  label: string;
 }
 
-export default function AmountField({ control, formData, tokens, register, handleChangeCurrency, inputName, currencyName, readonly }: AmountFieldProps) {
+export default function AmountField({ control, formData, tokens, register, handleChangeCurrency, inputName, currencyName, readonly, label }: AmountFieldProps) {
   return (
     <div className="flex-1">
-      <label htmlFor={inputName}>From Amount</label>
+      <label htmlFor={inputName}>{label}</label>
       <div className="relative">
         <Controller
           name={inputName}

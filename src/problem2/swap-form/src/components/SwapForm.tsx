@@ -35,6 +35,7 @@ const SwapForm: React.FC = () => {
               handleChangeCurrency={handleChangeCurrency}
               inputName="fromAmount"
               currencyName="fromCurrency"
+              label="From Amount"
             />
           </div>
           <SwapCurrencyIcon handleSwapCurrency={handleSwapCurrency} />
@@ -48,6 +49,7 @@ const SwapForm: React.FC = () => {
               inputName="toAmount"
               currencyName="toCurrency"
               readonly
+              label="To Amount"
             />
           </div>
         </fieldset>
