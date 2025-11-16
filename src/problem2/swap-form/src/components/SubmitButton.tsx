@@ -12,7 +12,7 @@ export const SubmitButton: React.FC<SubmitButtonProps> = memo(({
   return (
     <button
       type="submit"
-      className={`h-[65px] rounded-[12px] ${disabled ? "cursor-not-allowed" : ""}`}
+      className={`h-[50px] rounded-[12px] ${disabled ? "cursor-not-allowed" : ""}`}
       disabled={disabled}
     >
       {isSubmitting ? (

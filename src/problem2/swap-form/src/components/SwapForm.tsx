@@ -57,7 +57,12 @@ const SwapForm: React.FC = () => {
         <div className="actions mt-[20px]">
           <SubmitButton
             isSubmitting={isSubmitting}
-            disabled={isSubmitting || (!formData.fromAmount || !formData.fromCurrency || !formData.toCurrency)}
+            disabled={
+              isSubmitting ||
+              !formData.fromAmount ||
+              !formData.fromCurrency ||
+              !formData.toCurrency
+            }
           />
         </div>
       </form>
