@@ -18,6 +18,7 @@ const useSwapForm = () => {
     register,
   } = useForm<FormValues>({
     resolver: yupResolver(schema),
+    mode: "onChange",
   });
   const formData = watch();
   const onSubmit = async () => {

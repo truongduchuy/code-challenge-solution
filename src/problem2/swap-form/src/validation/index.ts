@@ -3,10 +3,10 @@ import * as yup from "yup";
 export const schema = yup.object().shape({
   fromAmount: yup
     .number()
-    .typeError("From value must be a number")
-    .required("From value is required")
-    .test("is-decimal", "Invalid decimal - max 3 decimal places", (value) => {
-      const regex = /^\d+(\.\d{1,3})?$/;
+    .typeError("From amount must be a number")
+    .required("From amount is required")
+    .test("is-decimal", "Invalid decimal - max 4 decimal places", (value) => {
+      const regex = /^\d+(\.\d{1,4})?$/;
       return regex.test(value + "");
     })
     .nullable(),

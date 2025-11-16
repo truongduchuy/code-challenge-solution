@@ -1,5 +1,6 @@
 import {
   Controller,
+  useController,
   type Control,
   type UseFormRegister,
 } from "react-hook-form";
@@ -29,7 +30,10 @@ export default function AmountField({
   readonly,
   label,
 }: AmountFieldProps) {
-
+  const { fieldState } = useController({
+    name: inputName,
+    control,
+  });
   return (
     <div className="flex-1">
       <label htmlFor={inputName}>{label}</label>
@@ -39,11 +43,12 @@ export default function AmountField({
           control={control}
           render={({ field: { onChange, value } }) => (
             <input
+              type="number"
               className={`h-[50px] rounded-[12px] text-[18px] ${
                 readonly ? "cursor-not-allowed" : ""
               }`}
               id={inputName}
-              value={value || ""}
+              value={value || ''}
               onChange={onChange}
               readOnly={readonly}
             />
@@ -72,9 +77,14 @@ export default function AmountField({
               </option>
             ))}
           </select>
-          <span className="text-sm text-[black] ml-[6px]">{formData[currencyName] || "Currency"}</span>
+          <span className="text-sm text-[black] ml-[6px]">
+            {formData[currencyName] || "Currency"}
+          </span>
         </div>
       </div>
+      {fieldState.error && (
+        <p className="text-[red] text-sm mt-1">{fieldState.error.message}</p>
+      )}
     </div>
   );
 }
