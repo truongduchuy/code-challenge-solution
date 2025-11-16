@@ -1,10 +1,1 @@
-# 99Tech Code Challenge #1 #
-
-Note that if you fork this repository, your responses may be publicly linked to this repo.  
-Please submit your application along with the solutions attached or linked.   
-
-It is important that you minimally attempt the problems, even if you do not arrive at a working solution.
-
-## Submission ##
-You can either provide a link to an online repository, attach the solution in your application, or whichever method you prefer.
-We're cool as long as we can view your solution without any pain.
+This is a deployed version of problem 2 for your reference [Swap Form](https://d3lh6zj1ogk472.cloudfront.net/index.html?Expires=1766966400&Signature=AzWJx4a~t0-S8dEzUc6qcVmjFYj2esrEocx~DF0aPeHcMoXD8ik20ct3CaSC6FpodMzkNPVIfjPVUJ6~3OStf-Y~aPOJbTLn65YXCoB4joU6KLaXmP9YSaLPnM5yDZFP85EtV-gCnZMGTeA9xP-E3FIjtD0fnpj4OmrdR-YwxlwiGeQFDAaTV5xyvtjsmzF-wvMlGYO87AImB2SCXuSbXqpkkWPqP212syhbJOx6wgotOqPe5Kt7WcD~rs6t6k0XWipReUi9hW4V36lpsEHSHCKCV8eUTuuzTY-IPt2RupLrXb2PUDjrujey0~dbTyDt-05yUAfEyKI-ytiKdYdmeg__&Key-Pair-Id=K22QVAQQGB7QK).
