@@ -57,7 +57,7 @@ export default function AmountField({
         <div className="absolute right-[20px] top-1/2 -translate-y-1/2 flex items-center gap-2 border border-[lightgray] px-[6px] py-[4px] rounded-[8px] pointer-events-none">
           <img
             className="w-5 h-5"
-            src={`/tokens/${formData[currencyName]}.svg`}
+            src={`https://raw.githubusercontent.com/Switcheo/token-icons/main/tokens/${formData[currencyName]}.svg`}
             alt={(formData[currencyName] as string) || ""}
           />
           <select
