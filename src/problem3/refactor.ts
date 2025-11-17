@@ -4,7 +4,7 @@ interface WalletBalance {
   blockchain: string;
 }
 
-interface Props extends BoxProps {}
+interface Props extends Omit<BoxProps, "children">  {}
 
 const getPriority = (blockchain: string): number => {
   switch (blockchain) {
@@ -45,8 +45,7 @@ const WalletPage: React.FC<Props> = (props: Props) => {
 
   const rows = sortedBalances.map((balance: WalletBalance) => {
     const formatted = balance.amount.toFixed(2);
-    const price = prices[balance.currency] || 0;
-    const usdValue = price * balance.amount;
+    const usdValue = (prices[balance.currency] || 0) * balance.amount;
 
     return (
       <WalletRow
